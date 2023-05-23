@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+        <script src="./extras/simData.js"></script>
+        <script src="./extras/userData.js"></script>
+        <script src="./extras/main.js"></script>
+        <link rel="stylesheet" href="./extras/main.css">
+    </head>
+    <body>
+        <h2>
+            Simulation data for
+            <span id="titleUsers"></span> users on a
+            <span id="titleLength"></span>km road recorded for
+            <span id="titleHours"></span> hours
+        </h2>
+        <div id="container">
+            <div id="sector">
+                <canvas id="sectorStatChart"></canvas>
+            </div>
+            <div id="calls">
+                <canvas id="userCallChart"></canvas>
+            </div>
+        </div>
+        <div id="runningInfo">
+            <div id="simBtn"><image id="simBtnIcon" src="./extras/play.png" style="width: 200px; margin: 0px 100px;"></image></div>
+            <div class="card">
+                <img src="./extras/phone_green.png" alt="Avatar" style="height: 320px;">
+                <div class="card_container">
+                  <h4><b>Longest caller duration:      <span id="longestCallTime"></span></b></h4>
+                  <p>Caller ID: <span id="longestCallId"></span></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./extras/phone_red.jpg" alt="Avatar" style="height: 320px;">
+                <div class="card_container">
+                  <h4><b>Shortest call duration:      <span id="shortestCallTime"></span></b></h4>
+                  <p>Caller ID: <span id="shortestCallId"></span></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
