@@ -2,7 +2,7 @@
 Simulation of a 3-sectored basestation in Python 
 For the Final Project for ENTS 656 we had to create a simulation of the downlink behavior of a 3-sectored base station along a road. The base station is oriented in such a manner that one sector(alpha) faces North and the other two sectors face South-East(beta) and South-West(gamma) from the alpha sector. Each sector is separated from the other at an angle of 120°. Since the road along which we have to track our simulation is 20 km West of the base station, the alpha and beta sectors would be the only two sectors having a big enough signal strength to be able to handle any calls along the road.
 
- 	In general, we are provided with some variable parameters like length of the road, simulation time, number of users, etc. We are also provided with the constant values for certain factors like the height of the base station, transmitter power, number of traffic channels, call rate, etc. Given all these variables and constants we had to write functions in Python to calculate the values of the following to successfully implement the simulation of the final project:
+In general, we are provided with some variable parameters like length of the road, simulation time, number of users, etc. We are also provided with the constant values for certain factors like the height of the base station, transmitter power, number of traffic channels, call rate, etc. Given all these variables and constants we had to write functions in Python to calculate the values of the following to successfully implement the simulation of the final project:
 
 •	Propagation loss using the Okamura-Hata Model 
 •	Shadowing using normal distribution library in python 
